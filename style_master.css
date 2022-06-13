@@ -1,0 +1,336 @@
+
+* {
+  font-family: sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #4f4f4f #ffffff;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #cccccccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+  border: 2px solid #cccccccc;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+html {
+  background-color: #EECC69;
+  background: url("/background.jpg");
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+body {
+  position: relative;
+  background-color: rgba(200,200,200,0.65);
+  backdrop-filter: blur(8px);
+  width: 80%;
+  max-width: 900px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+hr {
+  border: 1px solid #CCC;
+}
+
+th a {
+  text-decoration: none;
+  color: #000;
+}
+
+.inline {
+    display: inline;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.menu {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px 5px;
+  place-items: center;
+}
+
+.menubutton {
+  width: 180px;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.menubutton:hover {
+  border-radius: 15px;
+  background-color: rgba(200,200,200);
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.menubutton p {
+  color: #000;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
+
+.menubutton a {
+  text-decoration: none;
+}
+
+.menubutton img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: rgba(200,200,200,1);
+  transition: 0.2s;
+  color: #000;
+}
+
+.button:hover {
+  border-radius: 10px;
+  background-color: rgba(220,220,220,1);
+}
+
+.centerbutton {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.container {
+  background-color: rgba(235,235,235,1);
+  max-width: 400px;
+  padding: 10px;
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.container:hover {
+  background-color: rgba(220,220,220,1);
+}
+
+.invisiblecontainer {
+  max-width: 405px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.marginmedium {
+  margin: 10px;
+}
+
+.centertext {
+  text-align: center;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  text-align: center;
+  white-space: nowrap;
+  background-color: #efefef;
+  padding: 3px;
+}
+
+td {
+  text-align: left;
+  white-space: nowrap;
+  background-color: #dcdcdc;
+  padding: 3px;
+  transition: 0.1s;
+}
+
+tr:hover td {
+  cursor: pointer;
+  background-color: #EFEFEF;
+}
+
+table {
+  padding: 2px;
+  border-spacing: 0px;
+  background-color: #EFEFEF;
+}
+
+.tablecontainer {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.scene, canvas  {
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 140px;
+}
+
+.info {
+  display: inline;
+}
+
+.pcenter {
+  text-align: center;
+}
+
+#logo {
+  width: 140px;
+  max-width: 140px;
+}
+
+.login {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  padding: 8px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: rgba(200,200,200,1);
+  border-radius: 15px;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+}
+
+.login:hover {
+  background-color: rgba(230,230,230,1);
+}
+
+.login input {
+  margin-left: 8px;
+  margin-top: 13px;
+}
+
+.righttext {
+  text-align: right;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 4; }
+.div3 { grid-area: 2 / 1 / 3 / 2; }
+.div4 { grid-area: 2 / 2 / 3 / 4; }
+.div5 { grid-area: 3 / 3 / 4 / 4; }
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.buttoncontainer {
+  position: relative;
+}
+
+.notification {
+  text-align: center;
+  min-width: 18px;
+  color: #FFF !important;
+  background-color: #F44;
+  padding: 2px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0px;
+  right: 50px;
+}
+
+#headerbutton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 16px;
+}
+
+#headerbutton, .headermenu, .headermenu_content {
+  background-color: rgba(200,200,200,1);
+  color: #000;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.headermenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+}
+
+.headermenu_content {
+  display: none;
+  position: absolute;
+  right: 0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.headermenu_content a {
+  color: black;
+  padding: 12px 16px 0px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.headermenu_content a:hover {background-color: #ddd; border-radius: 4px;}
+
+/* Show the dropdown menu on hover */
+.headermenu:hover .headermenu_content {display: flex;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.headermenu:hover #headerbutton {background-color: #3e8e41;}
+
+.menubar:not(:hover) {
+  filter: blur(10px);
+  transition: 0.5s;
+}
+
+.chunklogo {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;
+}
+
+.menuchunk:hover .chunklogo {
+  display: none;
+}

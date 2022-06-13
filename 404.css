@@ -1,0 +1,79 @@
+* {
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, p, a {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+h1 {
+  font-size: 128pt;
+  margin-bottom: 0px;
+  margin-top: 0px;
+
+  background: linear-gradient(to left, #FFAAAA, #FF3333, #FFAAAA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: animateGlow 2s linear infinite;
+}
+
+h2 {
+  font-size: 18pt;
+  margin-top: 0px;
+}
+
+p {
+  font-size: 12pt;
+  color: #999;
+  margin-bottom: 40px;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  background: url("background_.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  margin: 0;
+  padding: 25px 50px 25px 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #00000080;
+  animation: intro 2s;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes intro {
+  0% {
+    -ms-transform: translate(-50%, -75%);
+    transform: translate(-50%, -75%);
+    opacity: 0;
+  }
+
+  100% {
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}

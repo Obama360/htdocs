@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 7px 7px 10px rgba(77, 86, 86, 1);
+}
+
+p {
+    display: inline;
+}
+
+a, p, h1, h2, h3, h4 {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #829DB0;
+}
+
+.form {
+    background-color: #B1C2D1;
+    padding: 1px 15px 10px 15px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: rgb(160, 170, 180) 0px 0px 0px 5px, rgb(20, 20, 20) 0px 5px 27px -8px inset, rgb(20, 25, 37) 0px -5px 20px -8px inset, 5px 5px 15px 5px rgba(0,0,0,0);
+}

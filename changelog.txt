@@ -1,0 +1,7 @@
+1.0	Release
+1.2	Bug fixes and stability imp
+1.5	Info gets shown on create checklists
+1.7	Notification counter for checklists
+1.8	Bugfix min password length problem fixed
+1.11	Data selection tables complete overhaul, now featuring datatables.js. Mail & misc. bugfixes.
+1.13	Visual overhaul (blur effects, shadows, scrollbar, ...)

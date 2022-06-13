@@ -1,0 +1,110 @@
+@keyframes intro {
+  0%   {background-color: rgba(200,200,200,0);
+        backdrop-filter: blur(0px);
+        transform: scale(0.5) perspective(1px);}
+  50%  {background-color: rgba(200,200,200,0.65);
+        backdrop-filter: blur(3px);
+        transform: scale(1) perspective(1px);}
+  100% {background-color: rgba(200,200,200,0.65);
+        backdrop-filter: blur(8px);}
+}
+
+body {
+  animation: intro 2s;
+}
+
+.cell3 {
+  display: grid;
+  grid-template-columns: 8fr 1fr 8fr;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h5 {
+  margin-top: 1px;
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ellipse {
+  max-height: 102px;
+  max-width: 23px;
+  height: 9vw;
+  width: 2vw;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+.portal:hover>.blue {
+  box-shadow: 0px 0px 105px 39px rgba(45,255,196,0.9), inset -0.4vw 1vw 0.4vw 0.2vw rgba(50,50,50,0.01), inset -0.4vw -1vw 0.4vw 0.2vw rgba(50,50,50,0.01), inset 0.4vw 0px 0.3vw 0.2vw rgba(130, 240, 255, 0.8);
+}
+
+.portal:hover>.orange {
+  box-shadow: 0px 0px 105px 39px rgba(255, 113, 25,0.9), inset 0.4vw 1vw 0.4vw 0.2vw rgba(50,50,50,0.01), inset 0.4vw -1vw 0.4vw 0.2vw rgba(50,50,50,0.01), inset -0.4vw 0px 0.3vw 0.2vw rgba(255, 200, 0, 0.8);
+}
+
+.portal:hover {
+  background-color: rgba(200, 200, 200, 0.3);
+}
+
+.portal {
+  margin-top: 20px;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.blue {
+  position: absolute;
+  top: 3vw;
+  left: 17.4vw;
+}
+
+.orange {
+  position: absolute;
+  top: 3.4vw;
+  left: 11vw;
+}
+
+.centerbutton {
+  margin: 0 auto;
+  display:block;
+  text-align: center;
+  width: 40%;
+}
+
+@media only screen and (min-width: 1120px) {
+  .blue {
+    position: absolute;
+    top: 34px;
+    left: 196px;
+  }
+
+  .orange {
+    position: absolute;
+    top: 38.1px;
+    left: 123px;
+  }
+
+  .portal:hover>.blue {
+    box-shadow: 0px 0px 105px 39px rgba(45,255,196,0.9), inset -8px 10px 6px 5px rgba(50,50,50,0.01), inset -8px -10px 6px 4px rgba(50,50,50,0.01), inset 5px 0px 6px 4px rgba(130, 240, 255, 0.8);
+  }
+
+  .portal:hover>.orange {
+    box-shadow: 0px 0px 105px 39px rgba(255, 113, 25,0.9), inset 8px 10px 6px 5px rgba(50,50,50,0.01), inset 8px -10px 6px 4px rgba(50,50,50,0.01), inset -5px 0px 6px 4px rgba(255, 200, 0, 0.8);
+  }
+}
