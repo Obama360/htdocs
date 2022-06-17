@@ -206,7 +206,7 @@ if ($_SESSION['logged_in'] != true) {
               </div>";
             }
 
-        echo "</div> bababui
+        echo "</div>
           <hr>"; ?>
 
   </body>

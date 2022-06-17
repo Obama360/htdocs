@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ajax test</title>
+    <style type="text/css">
+      * { font-family: sans-serif; }
+      body { max-width: 800px; margin: 0 auto; background-color: lightgray; padding: 5px; }
+    </style>
+  </head>
+  <body>
+    <div id="demo">
+      <h2 id="info">Get HTTP Status Cats!</h2>
+      <h3 id="currentcat">Current cat: none yet</h3>
+      <input id="codeinput" type="text" name="statuscode" placeholder="Your HTTP status code">
+      <button type="button" onclick="getCat()">Fetch a cat</button> <hr>
+      <img id="catimage" src="https://http.cat/100" alt="El Gatto">
+    </div>
+
+    <script type="text/javascript">
+      function getCat() {
+        document.getElementById("catimage").src = "https://http.cat/" + document.getElementById("codeinput").value;
+        document.getElementById("currentcat").innerHTML = "Current cat: " + document.getElementById("codeinput").value;
+      }
+    </script>
+
+    <p>This is obviously just a test. All images are fetched from <a href="https://http.cat">https://http.cat</a></p>
+
+  </body>
+</html>
