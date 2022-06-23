@@ -50,10 +50,10 @@ CREATE TABLE createuser (
 #Create Table 'AdminUsers'
 CREATE TABLE adminusers (
 	idAdminUser BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  username VARCHAR(25) NOT NULL UNIQUE,
-  password VARCHAR(50) NOT NULL,
-  name VARCHAR(40) NOT NULL,
-  level TINYINT NOT NULL
+ 	username VARCHAR(25) NOT NULL UNIQUE,
+  	password VARCHAR(50) NOT NULL,
+  	name VARCHAR(40) NOT NULL,
+  	level TINYINT NOT NULL
 );
 
 #Create initial adminuser
@@ -61,42 +61,42 @@ INSERT INTO adminusers (username, name, password, level) VALUES ('admin', 'Admin
 
 #Create Table 'CreateCheck'
 CREATE TABLE createcheck (
-  idCreate bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  createdate VARCHAR(20) NOT NULL,
-  finishdate VARCHAR(20),
-  checkADCreate VARCHAR(3),
-  checkADMod VARCHAR(3),
-  checkNotesCreate VARCHAR(3),
-  checkNotesMod VARCHAR(3),
-  checkTelCreate VARCHAR(3),
-  checkIQSCreate VARCHAR(3),
-  checkWACreate VARCHAR(3),
-  checkHWSWCreate VARCHAR(3),
-  checkWelcomeCreate VARCHAR(3),
-  comment TEXT,
+  	idCreate bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  	createdate VARCHAR(20) NOT NULL,
+  	finishdate VARCHAR(20),
+  	checkADCreate VARCHAR(3),
+  	checkADMod VARCHAR(3),
+  	checkNotesCreate VARCHAR(3),
+  	checkNotesMod VARCHAR(3),
+  	checkTelCreate VARCHAR(3),
+  	checkIQSCreate VARCHAR(3),
+  	checkWACreate VARCHAR(3),
+  	checkHWSWCreate VARCHAR(3),
+  	checkWelcomeCreate VARCHAR(3),
+  	comment TEXT,
 	fkIdUser BIGINT NOT NULL UNIQUE,
-  fkIdAdminusers BIGINT NOT NULL,
+  	fkIdAdminusers BIGINT NOT NULL,
 	FOREIGN KEY (fkIdUser) REFERENCES createuser(idUser),
-  FOREIGN KEY (fkIdAdminusers) REFERENCES adminusers(idAdminUser)
-  ON DELETE NO ACTION ON UPDATE NO ACTION
+  	FOREIGN KEY (fkIdAdminusers) REFERENCES adminusers(idAdminUser)
+  	ON DELETE NO ACTION ON UPDATE NO ACTION
 );
 
 #Create Table 'DeleteCheck'
 CREATE TABLE deletecheck (
 	idDelete bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	createdate VARCHAR(20) NOT NULL,
-  finishdate VARCHAR(20),
-  checkADDelete VARCHAR(3),
-  checkNotesDelete VARCHAR(3),
-  checkTelDelete VARCHAR(3),
-  checkIQSDelete VARCHAR(3),
-  checkWADelete VARCHAR(3),
-  checkHWSWDelete VARCHAR(3),
-  comment TEXT,
-  fkIdUser BIGINT NOT NULL UNIQUE,
-  fkIdAdminusers BIGINT NOT NULL,
+  	finishdate VARCHAR(20),
+  	checkADDelete VARCHAR(3),
+  	checkNotesDelete VARCHAR(3),
+  	checkTelDelete VARCHAR(3),
+  	checkIQSDelete VARCHAR(3),
+  	checkWADelete VARCHAR(3),
+  	checkHWSWDelete VARCHAR(3),
+  	comment TEXT,
+  	fkIdUser BIGINT NOT NULL UNIQUE,
+  	fkIdAdminusers BIGINT NOT NULL,
 	FOREIGN KEY (fkIdUser) REFERENCES createuser(idUser),
-  FOREIGN KEY (fkIdAdminusers) REFERENCES adminusers(idAdminUser)
+  	FOREIGN KEY (fkIdAdminusers) REFERENCES adminusers(idAdminUser)
 	ON DELETE NO ACTION ON UPDATE NO ACTION
 );
 
@@ -115,6 +115,6 @@ CREATE TABLE history (
 #Create Table 'maillist'
 CREATE TABLE maillist (
 	idMaillist bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  email VARCHAR(60) NOT NULL,
-  mailgroup TINYINT NOT NULL
+  	email VARCHAR(60) NOT NULL,
+  	mailgroup TINYINT NOT NULL
 );
