@@ -17,6 +17,6 @@ if ($_SESSION['logged_in'] != true) {
   $conn = new mysqli($servername, $username, "", $db);
 
   // Retrieve and display data
-  print_r(json_encode( mysqli_fetch_array(mysqli_query($conn, $_GET["q"]))));
+  print_r(json_encode(mysqli_fetch_array(mysqli_query($conn, $_GET["q"]))));
 }
 ?>
