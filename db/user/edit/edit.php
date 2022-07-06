@@ -28,6 +28,7 @@ if ($_SESSION['logged_in'] != true) {
     <script type="text/javascript">
     $(document).ready(function() {
       $('#userlist').DataTable({
+        "order": [[4, "desc"]],
         "scrollX": true,
         "autoWidth": false
       });

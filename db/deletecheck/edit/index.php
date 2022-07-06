@@ -41,6 +41,7 @@ if (isset($_GET["filter"]) && $_GET["filter"] != "") {
     <script type="text/javascript">
     $(document).ready(function() {
       $('#userlist').DataTable({
+        "order": [[4, "desc"]],
         "scrollX": true,
         "autoWidth": false
       });
